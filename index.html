@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Le Comptoir Mercière — Restaurant traditionnel lyonnais, Rue Mercière Lyon</title>
+<meta name="description" content="Le Comptoir Mercière, restaurant traditionnel au cœur de la Rue Mercière à Lyon. Spécialités lyonnaises, quenelle, andouillette, tartares et terrasse animée. Réservation au 04 37 57 99 18.">
+<link rel="canonical" href="https://www.lecomptoirmerciere.fr/">
+<meta name="theme-color" content="#101a26">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph / réseaux sociaux -->
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="Le Comptoir Mercière">
+<meta property="og:title" content="Le Comptoir Mercière — Restaurant traditionnel lyonnais">
+<meta property="og:description" content="Spécialités lyonnaises rue Mercière, au cœur du Vieux Lyon. Quenelle, andouillette, tartares maison, terrasse animée.">
+<meta property="og:image" content="https://www.lecomptoirmerciere.fr/images/hero-devanture-jour.jpg">
+<meta property="og:url" content="https://www.lecomptoirmerciere.fr/">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" href="fonts/playfair-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/alexbrush-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="images/comptoir-drone-poster.jpg" as="image">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/gallery-fan.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Le Comptoir Mercière",
+  "image": "https://www.lecomptoirmerciere.fr/images/hero-devanture-jour.jpg",
+  "servesCuisine": ["Française", "Lyonnaise", "Bouchon lyonnais"],
+  "priceRange": "€€",
+  "telephone": "+33437579918",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "49 Rue Mercière",
+    "addressLocality": "Lyon",
+    "postalCode": "69002",
+    "addressCountry": "FR"
+  },
+  "url": "https://www.lecomptoirmerciere.fr/",
+  "menu": "https://www.lecomptoirmerciere.fr/carte.html",
+  "acceptsReservations": "True"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+<header class="site-header">
+  <nav class="navbar container" aria-label="Navigation principale">
+    <a href="#accueil" class="brand">Le Comptoir <span>Mercière</span></a>
+    <div class="nav-menu" id="navMenu">
+      <a href="#presentation">Le restaurant</a>
+      <a href="carte.html">La carte</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#infos">Infos &amp; accès</a>
+    </div>
+    <div class="nav-actions">
+      <a class="btn btn-primary nav-cta" href="tel:+33437579918">Réserver</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu de navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+<div class="nav-scrim" id="navScrim"></div>
+
+<main id="contenu">
+
+  <section class="drone-hero" id="accueil" style="background-image:url('images/comptoir-drone-poster.jpg')">
+    <div class="drone-hero__pin">
+      <video
+        id="droneVideo"
+        class="drone-hero__video"
+        poster="images/comptoir-drone-poster.jpg"
+        muted
+        playsinline
+        preload="none"
+        aria-hidden="true"
+        tabindex="-1"
+        data-src="videos/comptoir-drone-scrub.mp4"
+        data-src-mobile="videos/comptoir-drone-scrub-mobile.mp4"
+      ></video>
+      <div class="drone-hero__overlay" aria-hidden="true"></div>
+      <div class="drone-hero__hint" id="droneHint" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        Faites défiler
+      </div>
+      <div class="hero-content container" id="droneContent">
+        <span class="hero-eyebrow">Rue Mercière · Vieux Lyon</span>
+        <h1 class="hero-title">Le Comptoir Mercière</h1>
+        <p class="hero-subtitle">Restaurant traditionnel lyonnais &amp; terrasse au cœur de la Rue Mercière</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+33437579918">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Réserver une table
+          </a>
+          <a class="btn btn-outline" href="carte.html">Voir la carte</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="presentation">
+    <div class="container about-grid">
+      <div class="about-media">
+        <img src="images/devanture-soir-detail.jpg" loading="lazy" width="1200" height="1600" alt="Arcades en pierre et enseigne du Comptoir Mercière illuminée le soir, rue Mercière à Lyon">
+      </div>
+      <div class="about-text">
+        <span class="eyebrow">Notre maison</span>
+        <h2 class="section-title">Un bouchon lyonnais dans les arcades de la Rue Mercière</h2>
+        <p>Installé sous les arcades en pierre dorée de la Rue Mercière, en plein cœur du Vieux Lyon, Le Comptoir Mercière perpétue la tradition du bouchon lyonnais : produits soignés, recettes transmises de génération en génération et convivialité à toute heure.</p>
+        <p>Aux beaux jours, notre terrasse s'installe sur les pavés de la rue piétonne, entre lanternes et parasols. À l'intérieur, pierres apparentes, banquettes en velours et ambiance feutrée font tout le charme de la maison.</p>
+        <div class="about-badges">
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 3h18v4H3zM5 7v13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7M9 21v-6h6v6"/></svg>
+            Fait maison
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+            Recettes lyonnaises
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12h20M12 2v20M4.93 4.93l14.14 14.14M19.07 4.93 4.93 19.07"/></svg>
+            Terrasse Rue Mercière
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="specialites">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Recettes traditionnelles</span>
+        <h2 class="section-title">Nos spécialités lyonnaises</h2>
+        <p class="section-lede">Accompagnées de frites maison et salade verte, comme il se doit.</p>
+      </div>
+      <div class="specialty-grid">
+        <article class="specialty-card">
+          <div class="specialty-media">
+            <img src="images/table-cote-de-boeuf.jpg" loading="lazy" width="1200" height="1600" alt="Ardoise suggestion Côte de bœuf maturée 14 jours, à partager pour deux personnes">
+          </div>
+          <div class="specialty-body">
+            <h3>Côte de bœuf maturée 14 jours</h3>
+            <p>Pour 2 personnes, frites maison à volonté et salade.</p>
+            <span class="specialty-price">75 €</span>
+          </div>
+        </article>
+        <article class="specialty-card">
+          <div class="specialty-media">
+            <img src="images/ardoise-specialites.jpg" loading="lazy" width="1200" height="1600" alt="Ardoise des spécialités lyonnaises du Comptoir Mercière : quenelle, tête de veau, andouillette, saucisson">
+          </div>
+          <div class="specialty-body">
+            <h3>Quenelle de brochet</h3>
+            <p>Et son riz, cuisson 25 minutes.</p>
+            <span class="specialty-price">24 €</span>
+          </div>
+        </article>
+        <article class="specialty-card">
+          <div class="specialty-media">
+            <img src="images/interieur-horloge.jpg" loading="lazy" width="1200" height="1600" alt="Salle intérieure du Comptoir Mercière, horloge ancienne et ambiance chaleureuse">
+          </div>
+          <div class="specialty-body">
+            <h3>Andouillette Beaujolaise</h3>
+            <p>Sauce moutarde à l'ancienne.</p>
+            <span class="specialty-price">19 €</span>
+          </div>
+        </article>
+        <article class="specialty-card">
+          <div class="specialty-media">
+            <img src="images/devanture-soir.jpg" loading="lazy" width="1200" height="1600" alt="Terrasse du Comptoir Mercière le soir, tables dressées sous les arcades illuminées">
+          </div>
+          <div class="specialty-body">
+            <h3>Tartare de bœuf</h3>
+            <p>Préparé et assaisonné en cuisine, frites maison.</p>
+            <span class="specialty-price">18 €</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="carte">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">La carte</span>
+        <h2 class="section-title">Un aperçu de notre carte</h2>
+        <p class="section-lede">Toutes nos formules, tapas, viandes, poissons et desserts sur la page dédiée.</p>
+      </div>
+      <div class="menu-preview-grid">
+        <div class="menu-preview-card">
+          <h3>Spécialités lyonnaises</h3>
+          <div class="menu-line"><span>Quenelle de brochet et son riz</span><span class="price">24 €</span></div>
+          <div class="menu-line"><span>Croustillant de tête de veau, sauce gribiche</span><span class="price">19 €</span></div>
+          <div class="menu-line"><span>Andouillette Beaujolaise, sauce moutarde</span><span class="price">19 €</span></div>
+          <div class="menu-line"><span>Saucisson lyonnais et sa sauce vin rouge</span><span class="price">19 €</span></div>
+        </div>
+        <div class="menu-preview-card">
+          <h3>Formule du Comptoir — 22 €</h3>
+          <div class="menu-line"><span>Tartare de bœuf, tartare de saumon ou burger</span><span></span></div>
+          <div class="menu-line"><span>Crème brûlée ou tarte aux pralines</span><span></span></div>
+          <div class="menu-line"><span style="font-size:0.82rem; opacity:.75;">Hors boisson, hors samedi, dimanche et jours fériés</span></div>
+        </div>
+      </div>
+      <div class="menu-cta">
+        <a class="btn btn-primary" href="carte.html">Consulter la carte complète</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="galerie">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Ambiance</span>
+        <h2 class="section-title">Le Comptoir en images</h2>
+      </div>
+      <div class="gallery-fan-wrap">
+      <div class="gallery-grid" id="galleryFan">
+        <a class="fan-card" href="images/hero-devanture-jour.jpg" target="_blank" rel="noopener">
+          <img src="images/hero-devanture-jour.jpg" loading="lazy" alt="Devanture du Comptoir Mercière de jour, rue Mercière à Lyon">
+        </a>
+        <a class="fan-card" href="images/devanture-soir.jpg" target="_blank" rel="noopener">
+          <img src="images/devanture-soir.jpg" loading="lazy" alt="Terrasse du Comptoir Mercière le soir sous les guirlandes lumineuses">
+        </a>
+        <a class="fan-card" href="images/interieur-horloge.jpg" target="_blank" rel="noopener">
+          <img src="images/interieur-horloge.jpg" loading="lazy" alt="Détail de l'horloge ancienne et de la salle du restaurant">
+        </a>
+        <a class="fan-card" href="images/ardoise-specialites.jpg" target="_blank" rel="noopener">
+          <img src="images/ardoise-specialites.jpg" loading="lazy" alt="Ardoise des spécialités lyonnaises affichée en terrasse">
+        </a>
+        <a class="fan-card" href="images/devanture-soir-detail.jpg" target="_blank" rel="noopener">
+          <img src="images/devanture-soir-detail.jpg" loading="lazy" alt="Arcades en pierre de la Rue Mercière et enseigne du restaurant">
+        </a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="avis">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Ils sont venus</span>
+        <h2 class="section-title">Ce que disent nos clients</h2>
+      </div>
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+          <p class="review-quote">« Une adresse authentique en plein Vieux Lyon, la quenelle est excellente et le service très chaleureux. »</p>
+          <p class="review-author">Avis Google</p>
+        </article>
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+          <p class="review-quote">« La terrasse rue Mercière est parfaite pour dîner en été, cuisine généreuse et vraiment lyonnaise. »</p>
+          <p class="review-author">Avis Google</p>
+        </article>
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+          <p class="review-quote">« Cadre magnifique sous les arcades, cave à vin bien fournie et andouillette au top. »</p>
+          <p class="review-author">Avis Google</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="infos">
+    <div class="container info-grid">
+      <div class="info-card">
+        <h2 class="section-title" style="margin-bottom:1.5rem;">Infos pratiques</h2>
+        <div class="info-list">
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <h3>Adresse</h3>
+              <p><a href="https://www.google.com/maps/search/?api=1&query=49+Rue+Merci%C3%A8re+69002+Lyon" target="_blank" rel="noopener">49 Rue Mercière, 69002 Lyon</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <h3>Téléphone</h3>
+              <p><a href="tel:+33437579918">04 37 57 99 18</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div>
+              <h3>Horaires</h3>
+              <!-- TODO client : merci de confirmer les horaires exacts, actuellement indicatifs -->
+              <table class="hours-table">
+                <tr><td>Tous les jours</td><td>12h – 14h30</td></tr>
+                <tr><td>&nbsp;</td><td>19h – 23h</td></tr>
+              </table>
+              <p style="font-size:0.78rem; opacity:.7; margin-top:0.5rem;">Horaires à confirmer avec l'établissement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="map-frame" id="mapFrame">
+          <div class="map-consent" id="mapConsent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="34" height="34" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <p>Le plan interactif est fourni par Google Maps et dépose des cookies tiers. Cliquez pour l'afficher.</p>
+            <button class="btn btn-outline" id="loadMapBtn" type="button">Afficher la carte</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Une table pour ce soir ?</h2>
+      <p>Réservez par téléphone, l'équipe du Comptoir Mercière se fera un plaisir de vous accueillir.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+33437579918">Appeler le 04 37 57 99 18</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="brand">Le Comptoir <span>Mercière</span></p>
+        <p>Restaurant traditionnel lyonnais, 49 Rue Mercière, 69002 Lyon. Spécialités du terroir et terrasse au cœur du Vieux Lyon.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Le Comptoir Mercière sur Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="#" aria-label="Le Comptoir Mercière sur Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <div class="footer-links">
+          <a href="#presentation">Le restaurant</a>
+          <a href="#specialites">Spécialités</a>
+          <a href="carte.html">La carte</a>
+          <a href="#avis">Avis</a>
+          <a href="#infos">Infos &amp; accès</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <div class="footer-links">
+          <a href="tel:+33437579918">04 37 57 99 18</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=49+Rue+Merci%C3%A8re+69002+Lyon" target="_blank" rel="noopener">49 Rue Mercière, 69002 Lyon</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Le Comptoir Mercière — Tous droits réservés</span>
+      <span>
+        <a href="mentions-legales.html">Mentions légales</a> ·
+        <a href="politique-confidentialite.html">Confidentialité &amp; cookies</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Gestion des cookies">
+  <p>Ce site n'utilise aucun cookie de mesure d'audience ni de publicité. Un plan Google Maps optionnel peut déposer des cookies tiers uniquement si vous choisissez de l'afficher. En savoir plus dans notre <a href="politique-confidentialite.html">politique de confidentialité</a>.</p>
+  <div class="cookie-actions">
+    <button class="btn btn-primary" id="cookieOk" type="button">J'ai compris</button>
+  </div>
+</div>
+
+<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/gallery-fan.js" defer></script>
+<script src="js/script.js"></script>
+</body>
+</html>

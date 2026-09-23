@@ -1,0 +1,97 @@
+/* ---------- Galerie "éventail" (fan carousel) ----------
+   Activé par js/gallery-fan.js via la classe .fan-layout (amélioration progressive).
+   Sans JS / prefers-reduced-motion : la grille .gallery-grid classique reste en place. */
+
+#galerie { overflow-x: clip; } /* l'éventail déborde du .container : on rogne au niveau de la section */
+.gallery-fan-wrap {
+  position: relative;
+  padding: 0.5rem 0 1rem;
+}
+
+.gallery-grid.fan-layout {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  gap: 0;
+  height: 22rem;
+  /* Tailles des cartes (rem) : mobile par défaut, agrandies par paliers */
+  --card-w: 8rem;
+  --card-h: 11rem;
+}
+@media (min-width: 480px)  { .gallery-grid.fan-layout { height: 26rem; --card-w: 10rem;  --card-h: 13.5rem; } }
+@media (min-width: 640px)  { .gallery-grid.fan-layout { height: 28rem; --card-w: 11.5rem; --card-h: 15rem; } }
+@media (min-width: 768px)  { .gallery-grid.fan-layout { height: 30rem; --card-w: 14rem;   --card-h: 19rem; } }
+@media (min-width: 1024px) { .gallery-grid.fan-layout { height: 34rem; --card-w: 17rem;   --card-h: 23rem; } }
+
+.gallery-grid.fan-layout > a.fan-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--card-w);
+  height: var(--card-h);
+  margin: calc(var(--card-h) / -2) 0 0 calc(var(--card-w) / -2);
+  aspect-ratio: auto;
+  grid-column: auto;
+  grid-row: auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 3px solid var(--cream-100);
+  background: var(--cream-200);
+  cursor: pointer;
+  will-change: transform, opacity;
+}
+.gallery-grid.fan-layout a:hover img,
+.gallery-grid.fan-layout a:focus-visible img { transform: none; }
+.gallery-grid.fan-layout > a.fan-card:focus-visible {
+  outline: 3px solid var(--gold-500);
+  outline-offset: 3px;
+}
+.gallery-grid.fan-layout img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* Flèches + points (uniquement s'il y a plus de 7 photos) */
+.fan-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 30;
+}
+.fan-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: 1.5px solid rgba(16, 26, 38, 0.18);
+  background: rgba(16, 26, 38, 0.05);
+  color: var(--navy-700);
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s, background 0.3s;
+}
+.fan-arrow:hover { border-color: var(--gold-500); color: var(--navy-900); background: rgba(200, 155, 60, 0.12); }
+.fan-arrow:focus-visible { outline: 3px solid var(--gold-500); outline-offset: 2px; }
+.fan-arrow svg { width: 1.2rem; height: 1.2rem; }
+.fan-dots { display: flex; align-items: center; gap: 0.5rem; }
+.fan-dots span {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: rgba(16, 26, 38, 0.18);
+  transition: transform 0.3s, background 0.3s;
+}
+.fan-dots span.is-active { background: var(--gold-500); transform: scale(1.4); }
